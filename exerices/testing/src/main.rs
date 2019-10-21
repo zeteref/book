@@ -10,6 +10,10 @@ fn largest<T: PartialOrd>(list: &[T]) -> &T {
     largest
 }
 
+fn hello(name: &str) -> String {
+    format!("hello {}!", name)
+}
+
 fn main() {
     let number_list = vec![34, 50, 25, 100, 65];
 
@@ -20,4 +24,8 @@ fn main() {
 
     let result = largest(&char_list);
     println!("The largest char is {}", result);
+
+    let a = &mut hello("world");
+    a.push_str("!!");
+    println!("{}", a);
 }
