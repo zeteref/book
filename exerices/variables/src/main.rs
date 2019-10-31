@@ -1,3 +1,9 @@
 fn main() {
-    let x = if 1 == 1 0 else 1;
+    let a = [10, 20, 30, 40, 50];
+    let mut index = 0;
+
+    while index < 5 {
+        println!("the value is: {}", a[index]);
+
+    }
 }
