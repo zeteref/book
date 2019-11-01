@@ -75,6 +75,21 @@ fn piglatin(s: &str) -> String {
     out
 }
 
+fn clonev() {
+    let mut a = Vec::new();
+
+    a.push("a");
+    a.push("c");
+    a.push("b");
+
+    let mut b = a.clone();
+    b.sort();
+
+
+    println!("{:?}", a);
+    println!("{:?}", b);
+}
+
 fn main() {
-    println!("{}", piglatin("first apple"));
+    clonev();
 }
