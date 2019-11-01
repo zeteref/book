@@ -1,0 +1,15 @@
+[package]
+name = "minigrep"
+version = "0.1.0"
+authors = ["zeteref <zeteref@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "minigrep"
+path = "src/lib.rs"
+
+[[bin]]
+name = "minigrep"
+path = "src/main.rs"
+
+[dependencies]
